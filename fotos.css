@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+li {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21627;
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+}
+
+#banner {
+    background-image: url('https://images6.alphacoders.com/113/1134871.jpg');
+    background-position: 50% 55%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#galery {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.name {
+    position: relative;
+    width: 100%;
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+    color: aliceblue;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.title {
+    padding-left: 0;
+}
+
+.text {
+    margin-top: 30px;
+    position: relative;
+    line-height: .9;
+}
+
+.text:after,.text:before {
+    background-color: #D21627;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px
+}
+
+.text:before {
+    left: 53px;
+    top: -8px;
+    transform-origin: left bottom
+}
+
+.text:after {
+    left: -6px;
+    top: calc(100% + 3px);
+    transform-origin: right top
+}
+
+.fotos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.coluna {
+    display: grid;
+    column-gap: 12px;
+    grid-template-columns: 291px 291px 291px;
+}
+
+.item1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item1:hover {
+    z-index: 1;
+}
+
+.item2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item2:hover {
+    z-index: 1;
+}
+
+.item3 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item3:hover {
+    z-index: 1;
+}
+
+.efeito1:hover {
+    transform: scale(1.15);
+    box-shadow: 0 5px 15px 7px rgba(0,0,0,.4);
+    border: 2px solid #fff;
+    z-index: 1
+}
+
+.efeito1:focus {
+    opacity: .5
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%)
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.efeito1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.efeito2 {
+    animation-name: fadeInBottom;
+    animation-duration: .5s;
+    animation-fill-mode: both
+}
+
+#foto1 {
+    height: 120px;
+    top: 0px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto2 {
+    height: 120px;
+    top: 130px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto3 {
+    height: 120px;
+    top: 260px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto4 {
+    height: 120px;
+    top: 390px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+
+#foto5 {
+    height: 120px;
+    top: 520px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto6 {
+    height: 120px;
+    top: 650px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+
+#foto7 {
+    height: 120px;
+    top: 780px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto8 {
+    height: 120px;
+    top: 910px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+#foto9 {
+    height: 120px;
+    top: 0px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto10 {
+    height: 120px;
+    top: 130px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto11 {
+    height: 120px;
+    top: 260px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto12 {
+    height: 120px;
+    top: 390px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+
+#foto13 {
+    height: 120px;
+    top: 520px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto14 {
+    height: 120px;
+    top: 650px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+
+#foto15 {
+    height: 120px;
+    top: 780px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto16 {
+    height: 120px;
+    top: 910px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+#foto17 {
+    height: 120px;
+    top: 0px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto18 {
+    height: 120px;
+    top: 130px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto19 {
+    height: 120px;
+    top: 260px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto20 {
+    height: 120px;
+    top: 390px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+
+#foto21 {
+    height: 120px;
+    top: 520px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto22 {
+    height: 120px;
+    top: 650px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+
+#foto23 {
+    height: 120px;
+    top: 780px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}
+
+#foto24 {
+    height: 120px;
+    top: 910px;
+    margin-bottom: 20px;
+    transition: .2s ease-in-out;
+}

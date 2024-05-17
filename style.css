@@ -1,0 +1,363 @@
+/* Esse commando @imports abaixo foi utilizado para importar uma fonte do https://fonts.google.com/. Ao escolher a fonte
+desejada vamos na opção @import e depois copiamos o codigo e colocamos ela aqui no nosso CSS*/
+ 
+
+/* Inicialmente damos um CSS reset em todo o meu html, onde por padrão todas as coisas começam com essas configurações
+abaixo*/
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Nosso header possui uma altura de 90px. O display flex que faz com que nossos elementos sejam colocados incialmente
+lado-a-lado. O justify-content:space-around faz com que os elementos fiquem separados ao maximo entre si com um espaçamento lateral,
+em ambos os lados, horizontalmente. E por fim utilizamos o align-items: center, para colocar os meus elementos no centro,
+organizando-os verticalmente, ao contrario do justify-content*/
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Aqui na minha nav (onde estão os meus UL do index.html) eu coloquei a largura do meu elemento em 60%, para ocupar o tamanho
+desejado dentro da minha página */
+nav {
+    width: 60%;
+}
+
+/* Aqui colocamos uma display:flex para colocar nossa lista lado-a-lado. Colocamos 100% de width para que cada item ocupasse todo
+o espaço disponível de largura. Usamos o justify-content: space-between, para separar os itens entre si ao maximo horizontalmente*/
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Aqui colocamos o list-style para que nenhum item da minhas lista tenha algum ponto, etc, para ficar apenas com o texto em si.
+Depois escolhemos a cor da nossa fonte, aliceblue. Depois escolhemos o tipo do cursor do mouse quando o mesmo está em cima do item.
+Depois o tamanho da letra em 19px. Depois uma transição de 0.5 segundos (ao colocar o . estamos considerando o 0 antes dele).
+Depois importamos a fonte Kdam Thmor Pro do google fonts, ver no inicio do CSS a explicação.*/
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Aqui criamos uma animação para o nosso li usando o hover, onde toda vez que o mouse passar por cima do nosso item ele irá mudar
+para a cor especificada abaixo. */
+li:hover {
+    color: #D21627;
+}
+
+ /* Aqui utilizamos o # para chamar o nosso id criado no HTML. Definimos a largura e a altura conforme o desejado para nossa página */
+#logo {
+    width: 100px;
+    height: 50px;
+}
+/* Aqui chamamos o nosso id onde importamos nossa imagem usando o background-image: url('link'). Depois posicionamos o nosso banner
+usando o background-position: 50% (horizontal) 55% (vertical). Usamos o background-size: cover; para que ocupasse todo o espaço a imagem
+completa. Usamos o width: 100% para que essa imagem ocupasse em 100% da nossa página (largura). Usamos o height: 600px para que o tamanho
+da imagem (altura) ficasse exatamente com essa medida. */
+#banner {
+    background-image: url('https://images6.alphacoders.com/113/1134871.jpg');
+    background-position: 50% 55%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+/* Aqui definimos o tamanho do nosso #trailer-container. Com o width ele ocupa 100% da largura da tela. Colocanmos
+um height em 400px para que a altura coubesse conforme o esperado os nossos elementos. O display flex coloca nossos elementos
+lado-a-lado (todos os elementos filhos recebem essa características, já que o #trailer-container é o elemento pai).
+O justify-center é um atributo de display:flex que centraliza nossos elementos*/
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Aqui definimos a largura do nosso vídeo com o width em 60%. Colocamos os nossos elementos lado-a-lado com o
+display: flex;. Alinhamos os elementos ao centro com o align-items: center. E o justify é para separar os elementos
+ao máximo entre si.*/
+.content {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Aqui definimos a largura do nosso trailer */
+.trailer {
+    width: 50%;
+}
+
+/* Aqui definimos a largura da nossa sinopse com o width. O flex-direction: column; faz com que o texto da sinopse
+e o button estejam em forma de coluna, já que ambos estão dentro da mesma div. O margin-left: 30px; foi utilizado
+para poder colocar uma distancia de 30px à esquerda do nosso video*/
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+/* Aqui nós definimos a cor, o tamanho da fonte, o tipo da fonte e a largura em que ela ocupa em nosso bloco.*/
+.description {
+    color: white;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    margin-top: 20px;
+}
+
+/* Aqui definimos a estilização do nosso button. A largura. a altura, a cor de fundo, a cor da letra, o padding (que é o
+distanciamento interno de um elemento em relação à sua borda), o arredondamento da borda (border-radius), o cursor de mão
+quando o mouse ficar em cima do botão (pointer), uma transição do efeito de 0.8 segundos ao colocar o mouse em cima,
+o tamanho da fonte, o tipo de display, o justify, o align-items, uma fonte mais grossa em negrito com o font-wight:bold,
+um border: none para ficar sem borda, um outline: none para quando clicarmos no butão ele não ficar com uma borda preta que se
+chama outline, e uma margin-top de 25px para o distanciamento do botão para o nosso texto. */
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21627;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+}
+
+/* Aqui é o efeito que criamos no .button acima, onde colocamos o nosso transition. Quando o mouse passa em cima do button
+ele fica branco e com a cor de texto preto. */
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Aqui colocamos três colunas iguais em nosso grid com o grid-template-columns: repeat(3, 1fr). Depois colocamos um espaçamento
+de 20px entra as linhas. Depois colocamos um espaçamento entre as nossas colunas de 40px com o nosso column-gap*/
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+/* Aqui definimos um width de 100% para que cada card ocupe 100% da sua conluna, já que são 3. Definimos uma altura. Definimos
+um background-size de cover para ele ocupar todo o espaço do nosso bloco. Definimos um background-position, onde primeiro 
+é o valor horizontal depois o vertical. Definimos um arredondamento da borda de 5px, Definimos o cursor como pointer para ficar
+com uma mãozinha. Definimos um transition para quando adicionarmos um hover para o nosso card logo em seguida. Definimos um display
+flex. Definimos um flex-direction como columns. Definimos um justify-contentx: flex-end, para que o nome do nosso ator no card
+fique no final dele, em baixo. O padding é o espaçamento do elemento com as bordas dele mesmo, internamente. A cor branca. O tamanha
+da fonte 17px. E o tipo da fonte já utilizada nesse projeto */
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Aqui criamos um hover para os nossos cards, quando passamos o mouse em cima da imagem ele aumenta a escala da imagem
+em 1.02, utilizamos o transform: scale(1.02). */
+/* Logo em seguida nós chamamos as nossas imagens de banner por meio do background-image, nesse caso utilizamos as imagens online */
+.card:hover {
+    transform: scale(1.02);
+}
+.banner-1 {
+    background-image: url('https://staticg.sportskeeda.com/editor/2023/07/86f02-16893004915182-1920.jpg');
+}
+.banner-2 {
+    background-image: url('https://s2.glbimg.com/zYlZbxKkPK-hKo3pi460fM0RL2w=/smart/e.glbimg.com/og/ed/f/original/2022/03/14/thebatman.jpg');
+}
+.banner-3 {
+    background-image: url('https://static.wikia.nocookie.net/the-batman-universe/images/2/28/Jim_Gordon_Total_Film_still.jpg/revision/latest?cb=20220216015018');
+}
+
+/* No nosso footer (rodapé) colocamos uma altura de 300px. Uma distância de 50px do topo da margem. Um display flex que
+coloca os nossos elementos filhos lado-a-lado, podendo ser manipulado igualmente. Colocamos eles em coluna. Colocamos eles ao centro.
+Depois separamos os elementos ao maximo, colocado um espaço nas laterais dos nossos elementos, por meio do justify-content: space-around */
+footer {
+    height: 300px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Aqui estilizamos nosso texto com a cor branca, usando a fonte importada para nosso projeto logo no começo. */
+span {
+    color:#fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Aqui demos um display: none, para que o elemento desapareça. */
+.footer-navigation {
+    display: none;
+}
+
+/* Aqui apenas estilizamos o nosso footer-list, porque ela já ira desaparecer junto com o nosso footer-navigation.
+Nosso interesse aqui é que essa navegação apareça apenas em dispositivos móveis*/
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Aqui criamos um Media Query para poder tornar o nosso projeto responsivo. */
+@media(max-width: 1280px) {
+
+    #banner {
+         height: 500px;
+         background-position: 50% 80%;
+     }
+
+     .content {
+         width: 100%;
+     }
+
+     .trailer {
+         width: 75%;
+         height: 75%;
+     }
+
+    #sinopse {
+         width: 95%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+     }
+ 
+    .description {
+         margin-left: -10px;
+         margin-top: 20px;
+         width: 100%;
+     }
+ 
+    .button {
+         width: 75%;
+         position: relative;
+         right: 14px;
+         margin-top: 30px;
+     }
+     
+    .card{
+        background-position: 50% 20%;
+     }
+    
+     .cards-content {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 40px;
+     }
+ }
+
+
+@media(max-width: 768px) {
+    /* Aqui colocamos display: block, para que essa navegação criada aparecesse justamente ao atingir o tamanho de 768px
+    para baixo, esse display tem como função ativar como default, adicionando uma quebra de linha em cada elemento,
+    um em cima do outro */
+    .footer-navigation {
+        display: block;
+        margin-top: 0px;
+    }
+    /* Aqui usamos o display: none para apagar o nosso menu do header e ficar ativo apenas o menu criado com a class
+    .footer-navigation */
+    nav {
+        display: none;
+    }
+
+    #banner {
+        height: 500px;
+        background-position: 50%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+        height: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        margin-left: -10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        position: relative;
+        right: 14px;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-bottom: 0px; 
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+

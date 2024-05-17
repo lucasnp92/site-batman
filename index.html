@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Prático 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Abaixo nós colocamos uma imagem dentro do nosso HTML, criando um id para com nome de logo, no arquivo
+        CSS iremos estilizar esse logo chamando nosso id por #nomedaid (logo) -->
+        <img id="logo" src="./media/batman_logo_red.jpg">
+        <!-- Criamos uma nav que será a nossa navegação, onde teremos nossa lista de itens ul e em cada ul nós
+        criamos uma tag 'a' que é a nossa tag de âncora, para podemos acessar outros html criados no projeto. -->
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="banner"></div>
+    <div id="trailer-container">
+        <div class="content">
+            <!-- Aqui nós iremos adcionar nosso video em nosso HTML. Usamos o atributo controls para podermos controlar 
+                o nosso vídeo, com play, pause, etc. Denominamos uma class trailer para estilizarmos em nosso CSS. -->
+            <video controls class="trailer">
+                <!-- Aqui nós criamos um source para poder adicionar o nosso video que está salvo na pasta media.
+                Depois definimos o tipo do arquivo a ser rodado como mp4 por meio do type, porque o nosso video é em mp4.
+                Posteriormente, adicionamos um comando de texto que diz para a pessoa caso o vídeo não funcione  -->
+                <source src="./media/Trailer 2 Oficial Legendado _ DC FanDome 2021-(1080p).mp4" type="video/mp4">
+                Seu navegador não possui suporte para vídeos
+            </video>
+
+            <!-- Aqui criamos a div com id sinopse para criarmos a sinpose do nosso filme. Criamos uma tag 'p' onde
+            está inserido todo o nosso texto da sinopse, a class description é para estilizarmos em nosso CSS -->
+            <div id="sinopse">
+                <p class="description">
+                    Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.
+                </p>
+                <!-- Criamos uma tag button com o texto comprar ingresso e definimos uma classe para estilizarmos no CSS -->
+                <button class="button">Comprar ingresso</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="actor-cards-container">
+        <div class="cards-content">
+            <!-- Algo sobre as classes é que é possível criar duas diferentes dentro do meu atributo. Abaixo vemos que
+            criamos duas classes, colocando apenas um espaço entre os nomes dentro da class, por exemplo:
+            class='card banner-1' (o espaço no texto entre card e banner definem que duas classes foram criadas, sendo nesse
+            caso a class 'card' e a class 'banner-1') -->
+            <!-- Utilizaremos essas duas classes porque queremos estilizar todos os cards por igual, e uma classe para
+            cada card ter a sua estilização, onde passaremos a URL e etc. -->
+            <div class="card banner-1">Robert Pattinson - Batman</div>
+            <div class="card banner-2">Zoe Kravitz - Mulher Gato</div>
+            <div class="card banner-3">Jeffrey Wright - Gordon</div>
+        </div>
+    </div>
+
+<!-- O Footer é o rodapé do nosso frontend. Onde teremos nossa logo, o texto com todos os direitos reservados, quem desenvolveu
+e uma navegação, no caso essa navegação do nosso footer só poderá ser visualizada quando for em dispositivo móvel-->
+<!-- Adicionamos a mesma logo do nosso header. Como nós definimos o nosso id com o nome de 'logo', as configurações
+que já fizemos da logo do nosso header vai se aplicar para este mesmo logo -->
+<!-- Criamos o nosso texto usando a tag Span, que nada mais é que um conteiner em linha para conteúdo fraseado, veja que logo em seguida
+     colocamos um simbolo de Copyright após o texto, nesse caso pegamos o simbolo em um site no Google que tenham simbolos em ASCII. 
+     Em seguida usamos o src para escolher o arquivo de mídia da nossa logo-->
+     <!-- Criamos um texto usando o span sobre quem desenvolveu -->
+    <footer>
+        <img id="logo" src="./media/batman_logo_red.jpg">
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Lucas Passos</span>
+
+        <!-- Usamos a mesma navegação criada anteriormente para quando formos acessar o site por meio de um dispositivo móvel
+        o nosso footer irá aparecer, e quando acessarmos pelo nosso Desktop essa navegação irá desaparecer. -->
+        <!-- Criamos uma classe para a nossa navegação. Criamos uma classe para o nosso 'ul' -->
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
